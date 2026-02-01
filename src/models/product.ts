@@ -3,7 +3,7 @@ export class Product {
   public static taxRate = 0.1;
   private sku: string;
   public name: string;
-  protected price: number;
+  public price: number;
 
   constructor(sku: string, name: string, price: number) {
     this.sku = sku;
@@ -17,3 +17,7 @@ export class Product {
     return this.price + Product.taxRate;
   }
 }
+
+//created object withname prod
+// const prod = new Product("SKU-0001","HP NoteBook", 1000);
+// console.log(prod.displayDetails());

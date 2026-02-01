@@ -18,6 +18,6 @@ export class DigitalProduct extends Product {
   }
 }
 
-const digitalproduct1 = new DigitalProduct("SKU-111", "HP Laptop", 1200, 250);
-console.log("Price without Tax: ", digitalproduct1.getPriceWithTax());
-console.log("Digital Product File Size: ", digitalproduct1.getFileSize(),"MB");
+// const digitalproduct1 = new DigitalProduct("SKU-111", "HP Laptop", 1200, 250);
+// console.log("Price without Tax: ", digitalproduct1.getPriceWithTax());
+// console.log("Digital Product File Size: ", digitalproduct1.getFileSize(),"MB");
