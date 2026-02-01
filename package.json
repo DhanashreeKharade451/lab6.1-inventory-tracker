@@ -2,7 +2,7 @@
   "name": "inventory-tracker",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "/models/main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "@types/node": "^25.0.10",
+    "@types/node": "^25.1.0",
     "typescript": "^5.9.3"
   }
 }

@@ -1,14 +1,23 @@
-import product from "./product";
-class PhysicalProduct extends product {
- // public static taxRate = 0.1;
-  weight: number;
+import { Product } from "./Product";
+
+export class PhysicalProduct extends Product {
+  public static taxRate = 0.1;
+  private weight: number;
+
+  public getWeight(): number {
+    return this.weight;
+  }
+  public setWeight(value: number) {
+    this.weight = value;
+  }
 
   constructor(sku: string, name: string, price: number, weight: number) {
     super(sku, name, price);
     this.weight = weight;
   }
-
   getPriceWithTax(): number {
-    return this.price + this.price * PhysicalProduct.taxRate;
+    return this.price + (this.price * Product.taxRate);
   }
 }
+const product1 = new PhysicalProduct("SKU-111", "HP Laptop", 1200, 2.5);
+console.log("Price with 10% Tax:", product1.getPriceWithTax());
