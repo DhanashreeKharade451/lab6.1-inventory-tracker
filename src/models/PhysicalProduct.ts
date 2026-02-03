@@ -19,5 +19,5 @@ export class PhysicalProduct extends Product {
     return this.price + (this.price * Product.taxRate);
   }
 }
-const product1 = new PhysicalProduct("SKU-111", "HP Laptop", 1200, 2.5);
-console.log("Price with 10% Tax:", product1.getPriceWithTax());
+// const product1 = new PhysicalProduct("SKU-111", "HP Laptop", 1200, 2.5);
+// console.log("Price with 10% Tax:", product1.getPriceWithTax());
