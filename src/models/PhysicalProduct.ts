@@ -11,8 +11,8 @@ export class PhysicalProduct extends Product {
     this.weight = value;
   }
 
-  constructor(sku: string, name: string, price: number, weight: number) {
-    super(sku, name, price);
+  constructor(sku: string, name: string, price: number, quantity: number, weight: number) {
+    super(sku, name, price, quantity);
     this.weight = weight;
   }
   getPriceWithTax(): number {

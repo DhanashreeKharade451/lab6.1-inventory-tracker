@@ -4,8 +4,8 @@ import { Product } from "./Product";
 export class DigitalProduct extends Product implements DiscountableProduct{
   fileSize: number;
 
-  constructor(sku: string, name: string, price: number, fileSize: number) {
-    super(sku, name, price);
+  constructor(sku: string, name: string, price: number, quantity: number, fileSize: number) {
+    super(sku, name, price, quantity);
     this.fileSize = fileSize;
   }
   getFileSize(): number {
