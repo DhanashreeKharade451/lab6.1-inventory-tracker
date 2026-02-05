@@ -14,7 +14,7 @@ export class Product {
     return `Product Name: ${this.name} SKU:${this.sku} PRICE: $${this.price}`;
   }
   getPriceWithTax(): number {
-    return this.price + Product.taxRate;
+    return this.price + (this.price * Product.taxRate);
   }
 }
 
