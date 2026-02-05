@@ -2,7 +2,7 @@ import { Product } from "./Product";
 
 export class PhysicalProduct extends Product {
   public static taxRate = 0.1;
-  private weight: number;
+  public weight: number;
 
   public getWeight(): number {
     return this.weight;
@@ -19,5 +19,7 @@ export class PhysicalProduct extends Product {
     return this.price + (this.price * Product.taxRate);
   }
 }
+
+
 // const product1 = new PhysicalProduct("SKU-111", "HP Laptop", 1200, 2.5);
 // console.log("Price with 10% Tax:", product1.getPriceWithTax());

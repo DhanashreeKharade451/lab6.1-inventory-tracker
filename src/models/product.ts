@@ -1,7 +1,7 @@
 
 export class Product {
   public static taxRate = 0.1;
-  private sku: string;
+  public sku: string;
   public name: string;
   public price: number;
 
@@ -19,5 +19,5 @@ export class Product {
 }
 
 //created object withname prod
-// const prod = new Product("SKU-0001","HP NoteBook", 1000);
-// console.log(prod.displayDetails());
+//  const prod = new Product("SKU-0001","HP NoteBook", 1000);
+//  console.log(prod.displayDetails());
