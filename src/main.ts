@@ -14,12 +14,13 @@ productList.push(pProduct);
 productList.push(dProduct);
 
 productList.forEach(prd => {
-    console.log(`SKU: ${prd.sku}`)
+    console.log(`Product SKU: ${prd.sku}`)
     console.log(`Product Name: ${prd.name}`)
-    console.log(`Price without tax $: ${prd.price}`)
-    console.log(`Price with tax $:`, calculateTax(prd))
+    console.log(`Price without tax :$ ${prd.price}`)
+    console.log(`Price with tax :$`, calculateTax(prd))
     
 });
+console.log("Price of Digital Product after 25% discount:$",dProduct.applyDiscount())
 // console.log(pProduct.displayDetails());
 // console.log( pProduct.getPriceWithTax());
 //console.log(productList);

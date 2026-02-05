@@ -1,6 +1,7 @@
+import type { DiscountableProduct } from "./DiscountableProduct ";
 import { Product } from "./Product";
 
-export class DigitalProduct extends Product {
+export class DigitalProduct extends Product implements DiscountableProduct{
   fileSize: number;
 
   constructor(sku: string, name: string, price: number, fileSize: number) {
@@ -15,6 +16,10 @@ export class DigitalProduct extends Product {
   }
   getPriceWithTax(): number {
     return this.price;
+  }
+  applyDiscount(): any{
+    console.log("Digital Product Price Before Discount: $",this.price)
+    return this.price * 0.75;
   }
 }
 
